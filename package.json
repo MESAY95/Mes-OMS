@@ -1,46 +1,48 @@
 {
-  "name": "mesay-operations-backend",
+  "name": "mesay-operations-frontend",
   "version": "1.0.0",
   "type": "module",
-  "description": "MERN Stack Operation Management System Backend",
-  "main": "server.js",
-  "scripts": {
-    "start": "node server.js",
-    "server": "nodemon server.js",
-    "dev": "nodemon server.js",
-    "prod": "NODE_ENV=production node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build" : "npm insatall --prefix ./client && npm run build --prefix ./client && npm install"
-  },
   "dependencies": {
-    "bcryptjs": "^2.4.3",
-    "compression": "^1.7.4",
-    "cookie-parser": "^1.4.7",
-    "cors": "^2.8.5",
-    "dotenv": "^16.0.3",
-    "express": "^4.18.2",
-    "express-rate-limit": "^6.8.1",
-    "express-validator": "^7.0.1",
-    "helmet": "^7.0.0",
-    "jsonwebtoken": "^9.0.0",
-    "mongoose": "^7.0.0",
-    "morgan": "^1.10.0",
-    "multer": "^1.4.5-lts.1"
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/icons-material": "^7.3.4",
+    "@mui/lab": "^7.0.1-beta.18",
+    "@mui/material": "^7.3.4",
+    "@mui/x-data-grid": "^8.14.0",
+    "@mui/x-date-pickers": "^8.14.0",
+    "antd": "^5.27.6",
+    "axios": "^1.13.1",
+    "chart.js": "^4.5.1",
+    "date-fns": "^4.1.0",
+    "formik": "^2.4.6",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^3.0.3",
+    "moment": "^2.30.1",
+    "notistack": "^3.0.2",
+    "react": "^18.2.0",
+    "react-big-calendar": "^1.19.4",
+    "react-bootstrap": "^2.10.10",
+    "react-chartjs-2": "^5.3.1",
+    "react-dom": "^18.2.0",
+    "react-query": "^3.39.3",
+    "react-router-dom": "^7.9.4",
+    "react-to-print": "^3.2.0",
+    "recharts": "^3.2.1",
+    "xlsx": "^0.18.5",
+    "yup": "^1.7.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.22"
+    "@vitejs/plugin-react": "^4.0.0",
+    "@vitejs/plugin-react-swc": "^4.1.0",
+    "eslint": "^9.37.0",
+    "eslint-plugin-react-hooks": "^7.0.0",
+    "eslint-plugin-react-refresh": "^0.4.23",
+    "globals": "^16.4.0",
+    "vite": "^7.1.11"
   },
-  "keywords": [
-    "mern",
-    "operations",
-    "management",
-    "mongodb",
-    "express",
-    "react",
-    "nodejs",
-    "enterprise",
-    "ethiopia"
-  ],
-  "author": "MESAY Operations Team",
-  "license": "MIT"
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  }
 }
