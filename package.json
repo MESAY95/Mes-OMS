@@ -1,0 +1,46 @@
+{
+  "name": "mesay-operations-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "MERN Stack Operation Management System Backend",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "dev": "nodemon server.js",
+    "prod": "NODE_ENV=production node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build" : "npm insatall --prefix ./client && npm run build --prefix ./client && npm install"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-rate-limit": "^6.8.1",
+    "express-validator": "^7.0.1",
+    "helmet": "^7.0.0",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.0.0",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  },
+  "keywords": [
+    "mern",
+    "operations",
+    "management",
+    "mongodb",
+    "express",
+    "react",
+    "nodejs",
+    "enterprise",
+    "ethiopia"
+  ],
+  "author": "MESAY Operations Team",
+  "license": "MIT"
+}
